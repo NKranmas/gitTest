@@ -14,7 +14,7 @@ http.createServer(function(req, res){
     });*/
     
 
-    //nodeEvents.evetEmitter.emit(message);
+    nodeEvents.nodeevnets();
 
     res.write("<h1>Welcome to the Homepage </h1>");
     res.write("The date and time is: " + timestamp.timeStamp() + "<br>");
@@ -23,8 +23,8 @@ http.createServer(function(req, res){
     var resTxt = q.id + " " + q.user;
     var qList = url.parse(req.url, true);
     //console.log(qList);
-    console.log(qList.host);
+   /* console.log(qList.host);
     console.log(qList.pathname);
-    console.log(qList.search);
+    console.log(qList.search);*/
     res.end("<br>" + resTxt);
 }).listen(3030);

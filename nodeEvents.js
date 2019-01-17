@@ -11,4 +11,6 @@ var message = function(){
 //crates a listener
 eventEmitter.on("evnt", message);
 
-eventEmitter.emit('evnt');
+module.exports.nodeevnets = function(){
+    eventEmitter.emit('evnt');
+}
